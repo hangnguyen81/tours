@@ -4,7 +4,7 @@ function Tour({tour,removeTour}){
 
     function controlText (text) {
         return(
-            <button className="bg-white border-0 text-primary d-inline" onClick={() => setReadMore(!readMore)}>{text}</button>
+            <button className="bg-white border-0 text-danger d-inline" onClick={() => setReadMore(!readMore)}>{text}</button>
         )
     } 
     return(
@@ -24,7 +24,7 @@ function Tour({tour,removeTour}){
                     <button 
                         className="btn btn-outline-danger"
                         onClick={()=>removeTour(tour.id)}
-                    >Not interested in</button>
+                    >Not interested</button>
                 </div>
             </div>
         </div>
