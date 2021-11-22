@@ -62,8 +62,7 @@ function App(){
             <section className="bg-light">
                 <div className='container-md'>
                     <TourHeader/>
-                    {loading? <Loading/>:''}
-                    <Menu menu={menuItems} filterItem={filter}/>
+                    {loading? <Loading/>:<Menu menu={menuItems} filterItem={filter}/>}                    
                     <div className="row my-3 justify-content-center align-items-start">
                         {listOfTours}
                     </div>
